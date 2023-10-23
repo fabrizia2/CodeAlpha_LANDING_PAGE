@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eatery Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>RensDelicacy</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="overlap-group">
+            <div class="content-top">
+                <div class="text">
+                <p class="a-place-you-eat">A place you <br />eat healthy</p>
+                <p class="lorem-ipsum-dolor">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in libero risus semper habitant arcu
+                    eget. Et integer <br />facilisi eget. Lorem ipsum dolor.
+                </p>
+                <a href="#" class="cta-button" id="viewMenuButton">Explore the menu</a>
+                </div>
+                <img class="unsplash" src="images/unsplash.svg" />
+            </div>
+            <div class="images">
+                <img class="rectangle" src="images/rectangle-18.svg" />
+                <img class="img" src="images/rectangle-19.svg" />
+                <img class="rectangle-2" src="images/rectangle-20.svg" />
+            </div>
+            <div class="image-and-text">
+                <div class="frame">
+                  <div class="div">
+                    <div class="rectangle-3"></div>
+                    <div class="text-wrapper">Chef Renish</div>
+                  </div>
+                  <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in libero risus semper</p>
+                </div>
+                <div class="frame-2">
+                  <img class="ellipse" src="images/elipse-3.svg" />
+                  <img class="ellipse" src="images/elipse-4.svg" />
+                  <img class="ellipse" src="images/elipse-5.svg" />
+                  <img class="ellipse" src="images/elipse-6.svg" />
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="about">
+        <h2>About Us</h2>
+        <p>We are a family-friendly eatery specializing in a wide variety of delectable dishes. Our commitment is to serve fresh and tasty meals to our customers. Here are some of our best dishes:</p>
+        <ul class="best-dishes">
+            <li>
+                <img src="./images/rectangle-19.svg" alt="Spaghetti Bolognese">
+                Spaghetti Bolognese
+            </li>
+            <li>
+                <img src="pizza.jpg" alt="Margarita Pizza">
+                Margarita Pizza
+            </li>
+            <li>
+                <img src="fruit-salad.jpg" alt="Fresh Fruit Salad">
+                Fresh Fruit Salad
+            </li>
+            <li>
+                <img src="coffee.jpg" alt="Iced Coffee">
+                Iced Coffee
+            </li>
+            <!-- Add more dishes as needed -->
+        </ul>
+    </section>
+    
+
+    <!-- Modal for displaying the menu -->
+    <div id="menuModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Our Menu</h2>
+            <div class="menu-items">
+                <!-- Dynamic menu items will be added here with JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or feedback, please don't hesitate to contact us.</p>
+        <a href="#" class="cta-button">Contact Us</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Eatery. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
