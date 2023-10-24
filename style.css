@@ -11,11 +11,10 @@ body {
 
 /* Style the header and navigation */
 header {
-    background-color: #fff;
+    background: linear-gradient(45deg, rgba(255, 87, 51, 0.2), rgba(216, 219, 17, 0.5), rgba(3, 212, 66, 0.7));
     color: #0e0d0d;
     padding: 10px 0;
     text-align: center;
-    
 }
 
 .logo {
@@ -48,12 +47,28 @@ nav {
 
 /* Style the hero section */
 .hero {
-    background-image: url('./imagesunsplash.svg');
-    background-size: cover;
-    text-align: center;
-    color: #fdfbfb;
-    padding: 100px 0;
-    height: 1200px;
+  position: relative;
+  text-align: center;
+  color: #fdfbfb;
+  height: 900px;
+  margin: 0; 
+  padding: 0;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place the video in the background */
+  overflow: hidden; /* Hide any video overflow */
+}
+
+.video-background video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .cta-button {
@@ -76,10 +91,16 @@ nav {
 
 /* Style the footer */
 footer {
-    background-color: #333;
+    background: linear-gradient(45deg, rgba(255, 87, 51, 0.2), rgba(216, 219, 17, 0.5), rgba(3, 212, 66, 0.7));
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
     text-align: center;
     padding: 10px 0;
+    height: 70px;
+    box-shadow: 5px 5px 10px #a6683c;
 }
 
 /* Add styles for other sections as needed */
@@ -147,14 +168,13 @@ footer {
 .overlap-group {
     position: absolute;
     width: 1440px;
-    top: 50px;
+    top: 0px;
   }
   
   .content-top {
     width: 1440px;
-    height: 800px;
+    height: 600px;
     flex-shrink: 0;
-    background-color: #f2f2f2;
   }
   
   .text {
@@ -163,14 +183,14 @@ footer {
     align-items: flex-start;
     gap: 20px;
     position: absolute;
+    width: 480px;
     top: 100px;
-    left: 131px;
+    left: 100px;
   }
   
 .a-place-you-eat {
     position: relative;
-    width: 422px;
-    margin-top: -25px;
+    margin-top: -65px;
     font-family: "Avenir-Heavy", Helvetica;
     font-weight: 400;
     color: #252525;
@@ -180,13 +200,11 @@ footer {
   }
   
   .lorem-ipsum-dolor {
-    position: relative;
-    width: 483px;
+    
     font-family: "Avenir-Roman", Helvetica;
     font-weight: 400;
-    color: #252525;
+    color: #faf6f6;
     font-size: 24px;
-    letter-spacing: 0;
     line-height: normal;
   }
   
@@ -215,7 +233,7 @@ footer {
     position: absolute;
     width: 648px;
     height: 369px;
-    top: 698px;
+    top: 500px;
     left: 115px;
   }
 
@@ -249,7 +267,7 @@ footer {
     align-items: flex-start;
     gap: 16px;
     position: absolute;
-    top: 830px;
+    top: 650px;
     left: 843px;
   }
   
@@ -291,7 +309,7 @@ footer {
   
   .p {
     position: relative;
-    width: 483px;
+    width: 400px;
     font-family: "Avenir-Roman", Helvetica;
     font-weight: 400;
     color: #252525cc;
@@ -316,21 +334,32 @@ footer {
 
   /*About*/
   .about {
+    align-items: center;
     text-align: center;
     padding: 40px 0;
-    background-color: #f6e3ce; /* Light beige background */
+    background-color: #fdfdfa; /* Light beige background */
     font-family: 'Dancing Script', cursive; /* Choose a decorative font */
-    color: #7b4724; /* Dark brown text color */
+    color: #0a0a0a; /* Dark brown text color */
+    box-shadow: 5px 5px 10px #a6683c;
+}
+
+.about p {
+  font-size: 15px;
+  gap: 60px;
+  margin-bottom: 20px;
 }
 
 .best-dishes {
     list-style: none;
+    width: 700px;
+    margin-left: 450px;
     padding: 0;
     margin-top: 30px; /* Increased top margin for more spacing */
 }
 
 .best-dishes li {
     display: flex;
+    width: 500px;
     align-items: center;
     margin: 30px 0; /* Increased margin for more spacing */
     font-size: 20px;
@@ -340,8 +369,9 @@ footer {
     box-shadow: 5px 5px 10px #a6683c; /* Brown shadow for dish boxes */
 }
 
-.best-dishes img {
-    max-width: 100px;
+.best-dishes img, .best-dishes video {
+    width: 110px;
+    height: 100px;
     margin-right: 20px; /* Adjust the spacing as needed */
     border-radius: 10px; /* Rounded image corners */
     box-shadow: 3px 3px 5px #a6683c; /* Add a subtle shadow to images */
@@ -352,4 +382,219 @@ footer {
     font-size: 30px;
     margin-right: 10px; /* Adjust the spacing as needed */
     color: #a6683c; /* Brown plate color */
+}
+
+.contact {
+  text-align: center;
+  background-color: #fffffe; /* Choose a color that fits your design */
+  padding: 40px 0;
+  color: #0a0a0a; /* Dark brown text color */
+  font-family: 'Dancing Script', cursive; /* Choose a decorative font */
+  box-shadow: 5px 5px 10px #a6683c;
+}
+
+.social-icons {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #0f0f0f;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: #131212;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s; /* Add a smooth color transition on hover */
+}
+
+.social-icon:hover {
+  color: #a6683c; /* Change the color on hover to a lighter brown */
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 24px 48px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #252525;
+  border-radius: 36px;
+  overflow: hidden;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.popup-content {
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.popup-content img {
+  width: 50%;
+  height: 50%;
+}
+
+/* Media queries for responsiveness */
+
+/* Header and Navigation */
+@media (max-width: 768px) {
+  .logo {
+      font-size: 10px;
+      font-weight: bold;
+      margin-left: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+      overflow: hidden;
+      padding: 30px 0; /* Adjust the padding for smaller screens */
+  }
+
+  .text {
+      width: 100%; /* Full width for the text content */
+      text-align: center; /* Center align text on smaller screens */
+  }
+
+  .images {
+      display: none; /* Hide images on smaller screens if needed */
+  }
+}
+
+/* About Section */
+@media (max-width: 768px) {
+  .best-dishes {
+      width: 100%; /* Make best-dishes list full width for smaller screens */
+      margin-left: 0; /* Reset left margin */
+  }
+
+  .best-dishes li {
+      width: 100%; /* Make each dish box full width for smaller screens */
+  }
+
+  .best-dishes img,
+  .best-dishes video {
+      width: 80px; /* Adjust image size for smaller screens */
+      height: 80px; /* Adjust image size for smaller screens */
+      margin-right: 10px; /* Adjust image spacing for smaller screens */
+  }
+}
+
+/* Media query for tablets and smaller screens (max-width: 768px) */
+@media (max-width: 480px) {
+  .about {
+    margin-top: -290px;
+  }
+  .overlap-group {
+      display: flex;
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+      align-items: center; /* Center align the content */
+  }
+
+  .content-top {
+      width: 100%; /* Full width for the content on smaller screens */
+      height: auto; /* Allow content to expand vertically as needed */
+  }
+
+  .text {
+      font-size: 10px;
+      width: 100%; /* Full width for the text content */
+      text-align: center; /* Center align text on smaller screens */
+  }
+
+  .images {
+      display: none; /* Hide images on smaller screens if needed */
+  }
+
+  .image-and-text {
+      width: 100%; /* Full width for the image and text container */
+  }
+
+  .frame-2 {
+      flex-direction: row; /* Adjust the arrangement of these images */
+      justify-content: center; /* Center align the images */
+  }
+
+  .overlap-group {
+    position: absolute;
+    top: 0px;
+    overflow-x: hidden;
+  }
+  
+  .content-top {
+    width: 200px;
+    height: 600px;
+    flex-shrink: 0;
+    overflow-x: hidden;
+  }
+  
+  .text {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    position: absolute;
+    width: 200px;
+    top: 100px;
+    left: 100px;
+  }
+  
+.a-place-you-eat {
+    position: relative;
+    margin-top: -25px;
+    font-family: "Avenir-Heavy", Helvetica;
+    font-weight: 400;
+    color: #252525;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: 40px;
+  }
+  
+  .lorem-ipsum-dolor {
+    font-family: "Avenir-Roman", Helvetica;
+    font-weight: 400;
+    color: #faf6f6;
+    font-size: 20px;
+    line-height: normal;
+  }
+  
+  .primary-button {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 24px 48px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #252525;
+    border-radius: 36px;
+    overflow: hidden;
+  }
 }

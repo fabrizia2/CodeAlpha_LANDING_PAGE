@@ -4,36 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eatery Landing Page</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <h1>RensDelicacy</h1>
+                <h1>Foodie's Haven</h1>
             </div>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#viewMenuButton">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
+        
         <div class="overlap-group">
             <div class="content-top">
+                <div class="video-background">
+                    <video autoplay muted loop playsinline>
+                        <source src="./images/background.mp4" type="video/mp4">
+                    </video>
+                </div>
                 <div class="text">
                 <p class="a-place-you-eat">A place you <br />eat healthy</p>
                 <p class="lorem-ipsum-dolor">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in libero risus semper habitant arcu
-                    eget. Et integer <br />facilisi eget. Lorem ipsum dolor.
+                    Indulge in a culinary experience that tantalizes your taste buds. At our restaurant, we take pride in serving you the finest dishes crafted with passion and care. Explore our diverse menu to embark on a journey of exquisite flavors and unforgettable moments.
                 </p>
                 <a href="#" class="cta-button" id="viewMenuButton">Explore the menu</a>
                 </div>
-                <img class="unsplash" src="images/unsplash.svg" />
+                
             </div>
             <div class="images">
                 <img class="rectangle" src="images/rectangle-18.svg" />
@@ -59,24 +65,28 @@
 
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <h2>About Us</h2>
-        <p>We are a family-friendly eatery specializing in a wide variety of delectable dishes. Our commitment is to serve fresh and tasty meals to our customers. Here are some of our best dishes:</p>
+        <p>We are a family-friendly eatery specializing in a wide variety of delectable dishes. Our commitment is to serve fresh and tasty meals to our customers.<br /> </p>
+        <p>Here are some of our best dishes:</p>
         <ul class="best-dishes">
             <li>
-                <img src="./images/rectangle-19.svg" alt="Spaghetti Bolognese">
+                <img src="./images/spaghetti.jpg" alt="Spaghetti Bolognese">
                 Spaghetti Bolognese
             </li>
             <li>
-                <img src="pizza.jpg" alt="Margarita Pizza">
+                <video autoplay muted loop>
+                    <source src="./images/pizza.mp4" type="video/mp4">
+                    Margarita Pizza
+                </video>
                 Margarita Pizza
             </li>
             <li>
-                <img src="fruit-salad.jpg" alt="Fresh Fruit Salad">
+                <img src="./images/fruit.jpg" alt="Fresh Fruit Salad">
                 Fresh Fruit Salad
             </li>
             <li>
-                <img src="coffee.jpg" alt="Iced Coffee">
+                <img src="./images/coffee.jpg" alt="Iced Coffee">
                 Iced Coffee
             </li>
             <!-- Add more dishes as needed -->
@@ -95,14 +105,38 @@
         </div>
     </div>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <h2>Contact Us</h2>
         <p>If you have any questions or feedback, please don't hesitate to contact us.</p>
-        <a href="#" class="cta-button">Contact Us</a>
+        <div class="social-icons">
+            <a href="https://github.com/fabrizia2" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/fabrizia_renish" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://renish.my.canva.site/" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/renish-okago-993498246/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div id="developerPopup" class="popup">
+            <div class="popup-content">
+                <span class="close" id="closePopup">&times;</span>
+                <h2>CEO of Foodie's Haven</h2>
+                <img src="./images/img18.png" alt="Developer Image">
+                <h2>Melvin Renish</h2>
+                <p>Frontend Web Developer</p>
+                <p>A self-driven lady from Kenya who likes tackling new problems daily.</p>
+                <div class="social-icons">
+                    <a href="https://github.com/fabrizia2" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/fabrizia_renish" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://renish.my.canva.site/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/renish-okago-993498246/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <a href="#" class="cta-button" id="contactButton">Contact Us</a>
     </section>
+    
 
     <footer>
-        <p>&copy; 2023 Eatery. All rights reserved.</p>
+        <p>&copy; 2023 Foodie's Haven. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>

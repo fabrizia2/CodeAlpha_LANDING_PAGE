@@ -3,25 +3,25 @@ const menuItems = [
     {
         name: "Spaghetti Bolognese",
         description: "Classic Italian pasta with rich meat sauce.",
-        image: "./images/elipse-3.svg",
+        image: "./images/spaghetti.jpg",
         price: "$12.99",
     },
     {
         name: "Margarita Pizza",
         description: "Simple and delicious pizza with tomato and mozzarella.",
-        image: "./images/elipse-4.svg",
+        image: "./images/pizza.jpg",
         price: "$12.99",
     },
     {
         name: "Fresh Fruit Salad",
         description: "A healthy mix of seasonal fruits.",
-        image: "./images/elipse-5.svg",
+        image: "./images/fruit.jpg",
         price: "$12.99",
     },
     {
         name: "Iced Coffee",
         description: "Chilled coffee with ice cubes and cream.",
-        image: "./images/elipse-6.svg",
+        image: "./images/coffee.jpg",
         price: "$12.99",
     },
 ];
@@ -88,3 +88,27 @@ window.addEventListener('click', function(event) {
         menuModal.style.display = 'none';
     }
 });
+
+
+document.querySelector('.cta-button').addEventListener('click', function() {
+    var popup = document.getElementById('developer-popup');
+    popup.style.display = 'block';
+});
+
+document.getElementById('closePopup').addEventListener('click', function() {
+    var popup = document.getElementById('developer-popup');
+    popup.style.display = 'none';
+});
+
+// Open the developer pop-up when the "Contact Us" button is clicked
+document.getElementById('contactButton').addEventListener('click', function() {
+    var popup = document.getElementById('developerPopup');
+    popup.style.display = 'block';
+});
+
+// Close the developer pop-up when the close button is clicked
+document.getElementById('closePopup').addEventListener('click', function() {
+    var popup = document.getElementById('developerPopup');
+    popup.style.display = 'none';
+});
+
