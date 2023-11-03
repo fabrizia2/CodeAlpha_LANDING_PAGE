@@ -21,7 +21,7 @@ header {
 .logo {
     font-size: 20px;
     font-weight: bold;
-    margin-left: -170px;
+    margin-left: -120px;
 }
 
 nav {
@@ -196,7 +196,7 @@ footer {
     margin-top: -65px;
     font-family: "Avenir-Heavy", Helvetica;
     font-weight: 400;
-    color: #252525;
+    color: #10b943;
     font-size: 72px;
     letter-spacing: 0;
     line-height: 90px;
