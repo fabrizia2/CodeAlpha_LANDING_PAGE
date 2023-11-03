@@ -1,0 +1,603 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Style the header and navigation */
+header {
+    background: linear-gradient(45deg, rgba(255, 87, 51, 0.2), rgba(216, 219, 17, 0.5), rgba(3, 212, 66, 0.7));
+    color: #0e0d0d;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: -170px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #070707;
+}
+
+/* Style the hero section */
+.hero {
+  position: relative;
+  text-align: center;
+  color: #fdfbfb;
+  height: 900px;
+  margin: 0; 
+  padding: 0;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow-x: hidden;
+  height: 100%;
+  z-index: -1; /* Place the video in the background */
+  overflow: hidden; /* Hide any video overflow */
+}
+
+.video-background video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 24px 48px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #252525;
+    border-radius: 36px;
+    overflow: hidden;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Style other sections as needed */
+
+/* Style the footer */
+footer {
+    background: linear-gradient(45deg, rgba(255, 87, 51, 0.2), rgba(216, 219, 17, 0.5), rgba(3, 212, 66, 0.7));
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
+    text-align: center;
+    padding: 10px 0;
+    height: 70px;
+    box-shadow: 5px 5px 10px #a6683c;
+}
+
+/* Add styles for other sections as needed */
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    max-width: 600px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Style the menu items with two columns */
+/* Add this CSS to style.css to create a four-column layout for menu items */
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd; /* Add a border to create the horizontal line */
+    padding-bottom: 10px; /* Adjust the spacing as needed */
+}
+
+.item-image {
+    flex: 1; /* Takes 25% of the available space */
+    max-width: 100px; /* Adjust the image width as needed */
+}
+
+.item-details {
+    flex: 3; /* Takes 75% of the available space */
+    margin-left: 20px;
+}
+
+.item-name {
+    font-weight: bold;
+}
+
+.price {
+    color: #ff5733;
+    font-weight: bold;
+}
+
+.overlap-group {
+    position: absolute;
+    width: 1440px;
+    top: 0px;
+  }
+  
+  .content-top {
+    width: 1440px;
+    height: 600px;
+    flex-shrink: 0;
+  }
+  
+  .text {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    position: absolute;
+    width: 480px;
+    top: 100px;
+    left: 100px;
+  }
+  
+.a-place-you-eat {
+    position: relative;
+    margin-top: -65px;
+    font-family: "Avenir-Heavy", Helvetica;
+    font-weight: 400;
+    color: #252525;
+    font-size: 72px;
+    letter-spacing: 0;
+    line-height: 90px;
+  }
+  
+  .lorem-ipsum-dolor {
+    
+    font-family: "Avenir-Roman", Helvetica;
+    font-weight: 400;
+    color: #faf6f6;
+    font-size: 24px;
+    line-height: normal;
+  }
+  
+  .primary-button {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 24px 48px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #252525;
+    border-radius: 36px;
+    overflow: hidden;
+  }
+
+  .unsplash {
+    position: absolute;
+    width: 690px;
+    height: 671px;
+    flex-shrink: 0;
+    top: 18px;
+    left: 686px;
+  }
+
+  .images {
+    position: absolute;
+    width: 648px;
+    height: 369px;
+    top: 500px;
+    left: 115px;
+  }
+
+  .rectangle {
+    position: absolute;
+    width: 200px;
+    height: 369px;
+    top: 0;
+    left: 0;
+  }
+  
+.img {
+    position: absolute;
+    width: 200px;
+    height: 369px;
+    top: 0;
+    left: 224px;
+  }
+  
+.rectangle-2 {
+    position: absolute;
+    width: 200px;
+    height: 369px;
+    top: 0;
+    left: 448px;
+  }
+
+  .image-and-text {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    position: absolute;
+    top: 650px;
+    left: 843px;
+  }
+  
+  .frame {
+    flex-direction: column;
+    gap: 6px;
+    display: inline-flex;
+    align-items: flex-start;
+    position: relative;
+    flex: 0 0 auto;
+  }
+
+  .div {
+    flex-direction: column;
+    gap: 16px;
+    display: inline-flex;
+    align-items: flex-start;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .rectangle-3 {
+    position: relative;
+    width: 52px;
+    height: 6px;
+    background-color: #252525;
+  }
+  
+  .text-wrapper {
+    position: relative;
+    width: fit-content;
+    font-family: "Avenir-Medium", Helvetica;
+    font-weight: 500;
+    color: #252525;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .p {
+    position: relative;
+    width: 400px;
+    font-family: "Avenir-Roman", Helvetica;
+    font-weight: 400;
+    color: #252525cc;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .frame-2 {
+    gap: 21px;
+    display: inline-flex;
+    align-items: flex-start;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .ellipse {
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+
+  /*About*/
+  .about {
+    align-items: center;
+    text-align: center;
+    padding: 40px 0;
+    background-color: #fdfdfa; /* Light beige background */
+    font-family: 'Dancing Script', cursive; /* Choose a decorative font */
+    color: #0a0a0a; /* Dark brown text color */
+    box-shadow: 5px 5px 10px #a6683c;
+}
+
+.about p {
+  font-size: 15px;
+  gap: 60px;
+  margin-bottom: 20px;
+}
+
+.best-dishes {
+    list-style: none;
+    width: 700px;
+    margin-left: 450px;
+    padding: 0;
+    margin-top: 30px; /* Increased top margin for more spacing */
+}
+
+.best-dishes li {
+    display: flex;
+    width: 500px;
+    align-items: center;
+    margin: 30px 0; /* Increased margin for more spacing */
+    font-size: 20px;
+    border: 2px solid #a6683c; /* Brown border around each dish */
+    border-radius: 15px; /* Rounded edges for each dish */
+    padding: 15px; /* Padding inside each dish box */
+    box-shadow: 5px 5px 10px #a6683c; /* Brown shadow for dish boxes */
+}
+
+.best-dishes img, .best-dishes video {
+    width: 110px;
+    height: 100px;
+    margin-right: 20px; /* Adjust the spacing as needed */
+    border-radius: 10px; /* Rounded image corners */
+    box-shadow: 3px 3px 5px #a6683c; /* Add a subtle shadow to images */
+}
+
+.best-dishes li::before {
+    content: '🍽️'; /* Add a plate symbol before each dish */
+    font-size: 30px;
+    margin-right: 10px; /* Adjust the spacing as needed */
+    color: #a6683c; /* Brown plate color */
+}
+
+.contact {
+  text-align: center;
+  background-color: #fffffe; /* Choose a color that fits your design */
+  padding: 40px 0;
+  color: #0a0a0a; /* Dark brown text color */
+  font-family: 'Dancing Script', cursive; /* Choose a decorative font */
+  box-shadow: 5px 5px 10px #a6683c;
+}
+
+.social-icons {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #0f0f0f;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: #131212;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s; /* Add a smooth color transition on hover */
+}
+
+.social-icon:hover {
+  color: #a6683c; /* Change the color on hover to a lighter brown */
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 24px 48px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #252525;
+  border-radius: 36px;
+  overflow: hidden;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.popup-content {
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.popup-content img {
+  width: 50%;
+  height: 50%;
+}
+
+/* Media queries for responsiveness */
+
+/* Header and Navigation */
+@media (max-width: 768px) {
+  .logo {
+      font-size: 10px;
+      font-weight: bold;
+      margin-left: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+      overflow: hidden;
+      padding: 30px 0; /* Adjust the padding for smaller screens */
+  }
+
+  .text {
+      width: 100%; /* Full width for the text content */
+      text-align: center; /* Center align text on smaller screens */
+  }
+
+  .images {
+      display: none; /* Hide images on smaller screens if needed */
+  }
+}
+
+/* About Section */
+@media (max-width: 768px) {
+  .best-dishes {
+      width: 100%; /* Make best-dishes list full width for smaller screens */
+      margin-left: 0; /* Reset left margin */
+  }
+
+  .best-dishes li {
+      width: 100%; /* Make each dish box full width for smaller screens */
+  }
+
+  .best-dishes img,
+  .best-dishes video {
+      width: 80px; /* Adjust image size for smaller screens */
+      height: 80px; /* Adjust image size for smaller screens */
+      margin-right: 10px; /* Adjust image spacing for smaller screens */
+  }
+}
+
+/* Media query for tablets and smaller screens (max-width: 768px) */
+@media (max-width: 480px) {
+  .about {
+    margin-top: -290px;
+  }
+  .overlap-group {
+      display: flex;
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+      align-items: center; /* Center align the content */
+  }
+
+  .content-top {
+      width: 100%; /* Full width for the content on smaller screens */
+      height: auto; /* Allow content to expand vertically as needed */
+  }
+
+  .text {
+      font-size: 10px;
+      width: 100%; /* Full width for the text content */
+      text-align: center; /* Center align text on smaller screens */
+  }
+
+  .images {
+      display: none; /* Hide images on smaller screens if needed */
+  }
+
+  .image-and-text {
+      width: 100%; /* Full width for the image and text container */
+  }
+
+  .frame-2 {
+      flex-direction: row; /* Adjust the arrangement of these images */
+      justify-content: center; /* Center align the images */
+  }
+
+  .overlap-group {
+    position: absolute;
+    top: 0px;
+    overflow-x: hidden;
+  }
+  
+  .content-top {
+    width: 200px;
+    height: 600px;
+    flex-shrink: 0;
+    overflow-x: hidden;
+  }
+  
+  .text {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    position: absolute;
+    width: 200px;
+    top: 100px;
+    left: 100px;
+  }
+  
+.a-place-you-eat {
+    position: relative;
+    margin-top: -25px;
+    font-family: "Avenir-Heavy", Helvetica;
+    font-weight: 400;
+    color: #252525;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: 40px;
+  }
+  
+  .lorem-ipsum-dolor {
+    font-family: "Avenir-Roman", Helvetica;
+    font-weight: 400;
+    color: #faf6f6;
+    font-size: 20px;
+    line-height: normal;
+  }
+  
+  .primary-button {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 24px 48px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #252525;
+    border-radius: 36px;
+    overflow: hidden;
+  }
+}
