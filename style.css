@@ -7,28 +7,27 @@
 
 body {
     font-family: Arial, sans-serif;
-    overflow-x: hidden;
+    
 }
 
 /* Style the header and navigation */
 header {
     background: linear-gradient(45deg, rgba(255, 87, 51, 0.2), rgba(216, 219, 17, 0.5), rgba(3, 212, 66, 0.7));
     color: #0e0d0d;
-    padding: 10px 0;
+    padding: 10px 20px;
     text-align: center;
 }
 
 .logo {
     font-size: 20px;
     font-weight: bold;
-    margin-left: -120px;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 960px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -48,8 +47,9 @@ nav {
 
 /* Style the hero section */
 .hero {
+  display: grid;
   position: relative;
-  text-align: center;
+  place-items: center;
   color: #fdfbfb;
   height: 900px;
   margin: 0; 
@@ -61,7 +61,6 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  overflow-x: hidden;
   height: 100%;
   z-index: -1; /* Place the video in the background */
   overflow: hidden; /* Hide any video overflow */
@@ -105,8 +104,6 @@ footer {
     height: 70px;
     box-shadow: 5px 5px 10px #a6683c;
 }
-
-/* Add styles for other sections as needed */
 
 /* Modal styles */
 .modal {
@@ -336,8 +333,9 @@ footer {
   }
 
   /*About*/
-  .about {
-    align-items: center;
+  .about { 
+    display: grid;
+    place-items: center;
     text-align: center;
     padding: 40px 0;
     background-color: #fdfdfa; /* Light beige background */
@@ -350,14 +348,6 @@ footer {
   font-size: 15px;
   gap: 60px;
   margin-bottom: 20px;
-}
-
-.best-dishes {
-    list-style: none;
-    width: 700px;
-    margin-left: 450px;
-    padding: 0;
-    margin-top: 30px; /* Increased top margin for more spacing */
 }
 
 .best-dishes li {
